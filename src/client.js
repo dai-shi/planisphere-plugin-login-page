@@ -40,9 +40,13 @@ LoginPage.config = function(config) {
     let t = Template[name];
     if (!t) {
       t = Template[name] = Template.fromString(navTemplateStr);
+      AccountsTemplates.linkClickOrig =
+        AccountsTemplates.linkClickOrig || AccountsTemplates.linkClick;
       AccountsTemplates.linkClick = function(state) {
         if (state === 'signIn') {
           FlowRouter.go(path);
+        } else {
+          AccountsTemplates.linkClickOrig(state);
         }
       };
     }

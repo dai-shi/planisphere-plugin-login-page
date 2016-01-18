@@ -1,6 +1,6 @@
 Package.describe({
   name: 'daishi:planisphere-plugin-login-page',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'Login page plugin for Planisphere (used with MainLayout)',
   git: 'https://github.com/dai-shi/planisphere-plugin-login-page',
   documentation: 'README.md'
