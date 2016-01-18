@@ -22,6 +22,7 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use(['ecmascript', 'templating', 'reactive-dict']);
   api.use('tinytest');
+  api.use('accounts-password');
   api.use('daishi:planisphere-plugin-login-page');
   api.addFiles(['tests/common-tests.js']);
 });
